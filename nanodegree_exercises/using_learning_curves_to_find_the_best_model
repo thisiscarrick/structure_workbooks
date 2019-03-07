@@ -228,6 +228,42 @@
     "* Logistic Regression Underfits\n",
     "* Decision Tree is just Fine for the Data"
    ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Using GridSearch in sklearn"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# importing gridsearch\n",
+    "from sklearn.model_selection import GridSearchCV\n",
+    "\n",
+    "# selecting parameters\n",
+    "# keys are name of parameters and values are list of possible values for that key\n",
+    "parameters = {'kernel':['poly', 'rbf'],'C':[0.1, 1, 10]}\n",
+    "\n",
+    "# creating a scorer\n",
+    "from sklearn.metrics import make_scorer\n",
+    "from sklearn.metrics import f1_score\n",
+    "scorer = make_scorer(f1_score)\n",
+    "\n",
+    "# Create the object.\n",
+    "grid_obj = GridSearchCV(clf, parameters, scoring=scorer)\n",
+    "# Fit the data\n",
+    "grid_fit = grid_obj.fit(X, y)\n",
+    "\n",
+    "# get the best estimator\n",
+    "best_clf = grid_fit.best_estimator_\n",
+    "\n",
+    "# We can use this best_clf to make the best preditions"
+   ]
   }
  ],
  "metadata": {
