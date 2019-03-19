@@ -1,2 +1,8 @@
 # structure_workbooks
-Machine Learning Problems and Workbooks
+- [x] Machine Learning Foundation
+- [x] Model Evaluation and Validation
+- [ ] Supervised Learning
+- [ ] Unsupervised Learning
+- [ ] Deep Learning
+- [ ] Reinforcement Learning
+- [ ] Machine Learning Capstone
