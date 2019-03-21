@@ -7,3 +7,5 @@
 - [ ] Deep Learning
 - [ ] Reinforcement Learning
 - [ ] Machine Learning Capstone
+
+** Other Info coming soon **
