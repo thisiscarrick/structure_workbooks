@@ -2,7 +2,8 @@
 ### Layout Plan for Machine Learning Progress
 - [x] Machine Learning Foundation
 - [x] Model Evaluation and Validation
-- [ ] Supervised Learning
+- [x] Supervised Learning
+- [ ] Supervised Learning Project
 - [ ] Unsupervised Learning
 - [ ] Deep Learning
 - [ ] Reinforcement Learning
